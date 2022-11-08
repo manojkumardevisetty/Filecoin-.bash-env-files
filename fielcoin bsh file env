@@ -1,0 +1,21 @@
+xport GOLOG_OUTPUT=file
+export GOLOG_FILE="$HOME/worker.log"
+export FIL_PROOFS_PARAMETER_CACHE=/home/server2/parametercache
+export FIL_PROOFS_PARENT_CACHE=/home/server2/parentcache
+export FFI_BUILD_FROM_SOURCE=1
+export RUSTFLAGS="-C target-cpu=native -g"
+export FIL_PROOFS_VERIFY_PRODUCTION_PARAMS=1
+export CUDA_HOME="/usr/local/cuda"
+export BELLMAN_CUSTOM_GPU="NVIDIA GeForce RTX 3050:2560"
+export FIL_PROOFS_USE_GPU_COLUMN_BUILDER=1
+export FIL_PROOFS_USE_GPU_TREE_BUILDER=1
+export FIL_PROOFS_USE_MULTICORE_SDR=1
+export LOTUS_BACKUP_BASE_PATH=/tmp
+export RUST_BACKTRACE=full
+export RUST_LOG=debug
+export FFI_USE_CUDA=1
+export RUSTFLAGS="-C target-cpu=native -g"
+export FFI_BUILD_FROM_SOURCE=1
+export PATH=$PATH:/usr/local/cuda-11.7/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.6/lib64
+export FIL_PROOFS_SDR_PARENTS_CACHE_SIZE=1073741824
